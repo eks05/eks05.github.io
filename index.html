@@ -16,7 +16,8 @@
       daum.postcode.load(function(){
           new daum.Postcode({
               oncomplete: function(data) {
-                  showToast(data)
+                  get.showToast(data)
+                
               }
           }).embed();
       });
