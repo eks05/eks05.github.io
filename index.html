@@ -16,8 +16,9 @@
       daum.postcode.load(function(){
           new daum.Postcode({
               oncomplete: function(data) {
-                  get.showToast(data.roadAddress)
-                
+                if(data.userSelectedType=="R"){
+                    get.showToast(data.roadAddress)
+                }
               }
           }).embed();
       });
