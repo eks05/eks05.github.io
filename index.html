@@ -7,10 +7,10 @@ header("Content-Type: text/html; charset=UTF-8");
         oncomplete: function(data) {
             if(data.userSelectedType=="R"){
 
-                window.asd.getAddress(data.zonecode, data.roadAddress, data.buildingName);
+                window.example.getAddress(data.zonecode, data.roadAddress, data.buildingName);
             }
             else{
-                window.asd.getAddress(data.zonecode, data.jibunAddress, data.buildingName);
+                window.example.getAddress(data.zonecode, data.jibunAddress, data.buildingName);
             }      
         }
     }).open();
